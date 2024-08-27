@@ -1,0 +1,11 @@
+streamlit
+altair
+matplotlib
+pandas
+numpy
+fpdf
+selenium
+altair_saver
+vl-convert-python
+datetime
+sklearn
