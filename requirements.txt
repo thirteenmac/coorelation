@@ -9,4 +9,3 @@ altair_saver
 vl-convert-python
 datetime
 scikit-learn
-sklearn
