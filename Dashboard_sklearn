@@ -5057,12 +5057,12 @@ elif st.session_state.current_page == 'mmi':
         st.rerun()   
     refined_df=st.session_state.refined_df
     df=refined_df.copy()
-    from scikit-learn.model_selection import train_test_split
-    from scikit-learn.preprocessing import StandardScaler, OneHotEncoder
-    from scikit-learn.compose import ColumnTransformer
-    from scikit-learn.pipeline import Pipeline
-    from scikit-learn.ensemble import RandomForestRegressor
-    from scikit-learn.metrics import mean_absolute_error, mean_squared_error, r2_score
+    from sklearn.model_selection import train_test_split
+    from sklearn.preprocessing import StandardScaler, OneHotEncoder
+    from sklearn.compose import ColumnTransformer
+    from sklearn.pipeline import Pipeline
+    from sklearn.ensemble import RandomForestRegressor
+    from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
     df['BATCH DATE'] = pd.to_datetime(df['BATCH START TIME'], format='%d/%m/%Y %H:%M:%S').dt.date
     df['DAY OF YEAR'] = pd.to_datetime(df['BATCH DATE']).dt.dayofyear
     product_dict=[]
@@ -5177,12 +5177,12 @@ elif st.session_state.current_page == 'mmi_II':
         st.rerun()   
     refined_df_II=st.session_state.refined_df_II
     df=refined_df_II.copy()
-    from scikit-learn.model_selection import train_test_split
-    from scikit-learn.preprocessing import StandardScaler, OneHotEncoder
-    from scikit-learn.compose import ColumnTransformer
-    from scikit-learn.pipeline import Pipeline
-    from scikit-learn.ensemble import RandomForestRegressor
-    from scikit-learn.metrics import mean_absolute_error, mean_squared_error, r2_score
+    from sklearn.model_selection import train_test_split
+    from sklearn.preprocessing import StandardScaler, OneHotEncoder
+    from sklearn.compose import ColumnTransformer
+    from sklearn.pipeline import Pipeline
+    from sklearn.ensemble import RandomForestRegressor
+    from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
     df['BATCH DATE'] = pd.to_datetime(df['BATCH START TIME'], format='%d/%m/%Y %H:%M:%S').dt.date
     df['DAY OF YEAR'] = pd.to_datetime(df['BATCH DATE']).dt.dayofyear
     if 'refined_df' in st.session_state:
