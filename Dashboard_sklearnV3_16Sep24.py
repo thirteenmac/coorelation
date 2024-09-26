@@ -9791,7 +9791,7 @@ elif st.session_state.current_page=='ae main':
         st.session_state.current_page = 'dashboard'
         st.rerun()
 elif st.session_state.current_page == 'dashboard':
-    st.markdown('<div class="main-heading">PVD Dashboard</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-heading">PVD Dashboard V3.0 - 16Sep24</div>', unsafe_allow_html=True)
     st.header("Select the Process")
     st.markdown(
         """
